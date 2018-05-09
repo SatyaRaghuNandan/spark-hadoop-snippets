@@ -55,4 +55,32 @@ FROM b
 ```
 
 
+### Inspect table spec
+
+With physical paths
+
+```
+SHOW TABLE STATS table
+```
+
+
+### Create structured column
+
+Array of struct
+
+```
+CREATE TABLE table
+(
+  id BIGINT, name STRING,
+  items ARRAY < STRUCT <
+    category:STRING, 
+    country_code:STRING, 
+    area_code:SMALLINT,
+    mobile:BOOLEAN
+  > >
+) STORED AS PARQUET;
+```
+
+
+
 
