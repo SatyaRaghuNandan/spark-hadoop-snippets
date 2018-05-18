@@ -82,5 +82,15 @@ CREATE TABLE table
 ```
 
 
+### Refresh a newly re-created table
+
+Once you drop a table and re-create it, Impala will fail 
+to refresh it. Here is a sequence to bring it back into the services.
+
+```
+INVALIDATE METADATA tbl
+REFRESH tbl
+```
+
 
 
