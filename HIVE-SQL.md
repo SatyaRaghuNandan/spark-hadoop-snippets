@@ -13,12 +13,34 @@ AS SELECT * FROM oldtbl
 WHERE <clause> 
 ```
 
+### Create a table over hadoop file
+
+```
+  CREATE EXTERNAL TABLE IF NOT EXISTS t(a STRING, b INT)
+  ROW FORMAT DELIMITED
+  FIELD TERMINATED BY ','
+  STORED AS PARQUET
+  LOCATION '/user/<>/where'
+```
+
+### Clone table structure
+
+```
+  CREATE TABLE t2 LIKE t1;
+```
+
+### Add a new column
+
+```
+  ALTER TABLE a ADD COLUMNS (b STRING)
+```
+
 ### Drop partition
 
 Simple
 
 ```
-ALTER TABLE tabl DROP PARTITION (col=1)
+  ALTER TABLE tabl DROP PARTITION (col=1)
 ```
 
 ### Tips : Pivot Sum without grouping
