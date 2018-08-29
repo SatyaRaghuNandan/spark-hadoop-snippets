@@ -34,3 +34,7 @@ The same technique applies to HiveSQL too
   sqlContext.parquetFile(INPUT).coalesce(SMALLER_NUM_PAR)
     .write.parquet(OUTPUT)
 ```
+
+### Spark links
+
+- (Spark's built-in basic stats exploration)[http://blog.madhukaraphatak.com/statistical-data-exploration-spark-part-1/]
