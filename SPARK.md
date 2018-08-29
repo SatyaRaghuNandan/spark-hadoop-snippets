@@ -37,4 +37,4 @@ The same technique applies to HiveSQL too
 
 ### Spark links
 
-- (Spark's built-in basic stats exploration)[http://blog.madhukaraphatak.com/statistical-data-exploration-spark-part-1/]
+- [Spark's built-in basic stats exploration](http://blog.madhukaraphatak.com/statistical-data-exploration-spark-part-1/)
